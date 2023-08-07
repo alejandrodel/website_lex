@@ -9,12 +9,20 @@ function Contacto(){
     e.preventDefault();
 
     emailjs.sendForm('service_j2z4lgj', 'template_993blzy', form.current, 'bWdIcmq5YktYOgfu8')
-      .then((result) => {
-          console.log(result.text);
-          console.log("message sent");
-      }, (error) => {
-          console.log(error.text);
-      });
+    .then((result) => {
+        console.log(result.text);
+        //CLEAR FIELDS.
+        let username = document.getElementById("username"); 
+        username.value = ""
+        let email = document.getElementById("email"); 
+        email.value = ""
+        let mensaje = document.getElementById("mensaje"); 
+        mensaje.value = ""
+
+    }, (error) => {
+        console.log(error.text);
+    });
+
   };
 
   return (
@@ -46,13 +54,13 @@ function Contacto(){
               <form className="form-horizontal" ref={form} onSubmit={sendEmail}>
                 <div className="app-form">
                     <div className="app-form-group">
-                      <input className="app-form-control" placeholder="NOMBRE" name="user_name"/>
+                      <input className="app-form-control" placeholder="NOMBRE" name="user_name" id="username" />
                     </div>
                     <div className="app-form-group">
-                      <input className="app-form-control" placeholder="EMAIL" name="user_email"/>
+                      <input type="email" className="app-form-control" placeholder="EMAIL" name="user_email" id="email" />
                     </div>
                     <div className="app-form-group message">
-                      <input className="app-form-control" placeholder="MENSAJE" name="message" />
+                      <input className="app-form-control" placeholder="MENSAJE" name="message" id="mensaje" />
                     </div>
                   </div>
                   <div className="app-form-group buttons">
@@ -117,6 +125,7 @@ body, button, input {
 
 .background {
   display: flex;
+  background: linear-gradient(to right, #ea1d6f 0%, #eb466b 100%);
   min-height: 100vh;
 }
 

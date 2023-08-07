@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useLayoutEffect }  from "react";
 import {BrowserRouter,Navigate, Route,Routes} from "react-router-dom"; 
 import Home from "../pages/Home";
 import Alex from "../pages/Alex";
@@ -11,11 +11,30 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import {Link, Outlet} from "react-router-dom";
 
 
+
 function Header(){
+
+    //This code is to have a Sticky Header 
+    const stickyHeader = useRef()
+    useLayoutEffect(() => {
+      const mainHeader = document.getElementById('mainHeader')
+      let fixedTop = stickyHeader.current.offsetTop
+      const fixedHeader = () => {
+        if (window.pageYOffset > fixedTop +170) {
+          mainHeader.classList.remove('header-dark')
+          mainHeader.classList.add('fixedTop')
+        } else {
+          mainHeader.classList.remove('fixedTop')
+          mainHeader.classList.add('header-dark')
+        }
+      }
+      window.addEventListener('scroll', fixedHeader)
+    }, [])
+
     return(
         <header>
             <div>
-                <div className="header-dark sticky-thc">
+                <div className="header-dark" id="mainHeader" ref={stickyHeader}>
                     <nav className="navbar navbar-dark navbar-expand-md navigation-clean-search">
                         
                         <Navbar expand="lg" >
