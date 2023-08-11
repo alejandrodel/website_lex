@@ -8,7 +8,7 @@ import Home from "./pages/Home";
 import Alex from "./pages/Alex";
 import Deleo from "./pages/Deleo";
 import Contacto from "./pages/Contacto";
-import Footer from './components/Footer';
+
 
 
 function App() {
@@ -24,8 +24,6 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter>
-
-      
     </div>
   );
 }

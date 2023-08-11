@@ -1,6 +1,8 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import styled from "styled-components";
+import map from "../images/Home/carousel/i40.jpg"
+import Footer from '../components/Footer';
 
 function Contacto(){
   const form = useRef();
@@ -89,13 +91,15 @@ function Contacto(){
   </div>
     </div>
       </div>
+      
       </div>
       
   
 
   
-  
+      
     </StyledContactForm>
+    
 
   );
 };
@@ -113,7 +117,7 @@ const StyledContactForm = styled.div`
 
 
 body {
-  background: linear-gradient(to right, #ea1d6f 0%, #eb466b 100%);
+  background:  linear-gradient(to right, #d94343 0%, #eb466b 100%); 
   font-size: 12px;
 }
 
@@ -125,7 +129,7 @@ body, button, input {
 
 .background {
   display: flex;
-  background: linear-gradient(to right, #ea1d6f 0%, #eb466b 100%);
+  background: linear-gradient(to right, #d94343 0%, #eb466b 100%);
   min-height: 100vh;
 }
 
@@ -409,7 +413,7 @@ hr {
   display: flex;
   flex-direction: column;
   position: relative;
-  color: #ea1d6f;
+  color: #d94343;
   font-size: 26px;
 }
 
@@ -421,7 +425,7 @@ hr {
   bottom: -10px;
   width: 25px;
   height: 4px;
-  background: #ea1d6f;
+  background: #d94343;
 }
 
 .app-contact {
@@ -467,26 +471,17 @@ hr {
 .app-form-button {
   background: none;
   border: none;
-  color: #ea1d6f;
+  color: #d94343;
   font-size: 14px;
   cursor: pointer;
   outline: none;
 }
 
 .app-form-button:hover {
-  color: #b9134f;
+  color: #d94343;
+  font-weight: 100;
 }
 
-.credits {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-  color: #ffa4bd;
-  font-family: 'Roboto Condensed', sans-serif;
-  font-size: 16px;
-  font-weight: normal;
-}
 
 .credits-link {
   display: flex;

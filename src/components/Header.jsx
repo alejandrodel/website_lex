@@ -43,11 +43,11 @@ function Header(){
                                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                                 <Navbar.Collapse id="basic-navbar-nav">
                                 <Nav className="me-auto">
-                                    <Nav.Link as={Link} to={"/"}>Inicio</Nav.Link>
-                                    <Nav.Link as={Link} to={"/Alex"}>Nosotros</Nav.Link>
-                                    <Nav.Link as={Link} to={"/Alex"}>Servicios</Nav.Link>
-                                    <Nav.Link as={Link} to={"/Contacto"}>Contacto</Nav.Link>
-                                    <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+                                    <Nav.Link as={Link} to={"/"}>INICIO</Nav.Link>
+                                    <Nav.Link as={Link} to={"/Alex"}>NOSOTROS</Nav.Link>
+                                    <Nav.Link as={Link} to={"/Alex"}>SERVICIOS</Nav.Link>
+                                    <Nav.Link as={Link} to={"/Contacto"}>CONTACTO</Nav.Link>
+                                    {/*<NavDropdown title="Dropdown" id="basic-nav-dropdown">
                                     <NavDropdown.Item as={Link} to={"/Alex"}>Action</NavDropdown.Item>
                                     <NavDropdown.Item as={Link} to={"/Alex"}>
                                         Another action
@@ -57,7 +57,7 @@ function Header(){
                                     <NavDropdown.Item as={Link} to={"/"}>
                                         Separated link
                                     </NavDropdown.Item>
-                                    </NavDropdown>
+                                </NavDropdown> --> */} 
                                 </Nav>
                                 </Navbar.Collapse>
                             </Container>
