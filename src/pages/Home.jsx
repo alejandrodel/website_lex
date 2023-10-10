@@ -4,7 +4,7 @@ import i40 from "../images/Home/carousel/i40.jpg";
 import tec from "../images/Home/carousel/tecnologia.jpg";
 import industrial from "../images/Home/carousel/industrialautomation.png";
 import packaging from "../images/Home/carousel/packaging2.jpg";
-import products from "../images/Home/carousel/products.jpg";
+import products from "../images/Home/carousel/Ignition.jpg";
 import programming from "../images/Home/Services/programming.png";
 import robot from "../images/Home/Services/robot.png";
 import scada from "../images/Home/Services/scada.png";
@@ -37,11 +37,11 @@ function Home(){
         },
         {
           image: industrial,
-          caption: "Industrial"
+          caption: "Robotica Industrial"
         },
         {
           image: products,
-          caption: "products"
+          caption: "Expertos en Sistemas SCADA"
         },
         {
           image: packaging,
@@ -67,7 +67,7 @@ function Home(){
 
             <div style={{
           padding: "0 0"
-        }}>
+        }} id="home">
           <Carousel
             data={data}
             time={800}
@@ -96,15 +96,23 @@ function Home(){
           />
         </div>
 
-        <div className="container py-5">
+        <div className="container py-5" id="nosotros">
             <div className="row">
 
                 <div className="col-lg-6 col-md-6 col-12">
                     <h2 className="mb-4 bt_bb_headline_content">Acerca de Nosotros</h2>
 
-                    <p>Ben Resume HTML Template is brought to you by <a rel="nofollow" href="https://www.tooplate.com" target="_parent">Tooplate website</a>. You can feel free to edit and use this page for your small site. You are allowed to use this HTML template for any kind of purpose.</p>
+                    <p>Somos una casa de ingeniería establecida en la ciudad de Monterrey, México, con experiencia de más de 8 años en el mercado de la automatización.</p>
 
-                    <p>However, please do not re-distribute the downloadable template ZIP file on any template collection website. This is strongly prohibited. Please contact Tooplate for more information.</p>
+                    <p>Hemos desarrollado aplicaciones de automatización desde la más simple hasta la más compleja utilizando tecnología de última generación.</p>
+
+                    <p>Trabajamos de la mano con SIEMENS para ofrecer a nuestros clientes proyectos y productos de la más alta calidad.</p>
+
+                    <p>Tenemos amplia experiencia en Soluciones i4.0. Contando con múltiples projectos donde se combinan tecnologías tales como: PLCs, Robots, SCADAs, OPCs, Sistemas de Visión, Bases de datos, MES y Aplicaciones Especiales (Python, .NET , etc...) </p>
+
+                    
+
+                    
 
                 </div>
 
@@ -118,7 +126,7 @@ function Home(){
       
 
 
-        <div className="servicios">         
+        <div className="servicios" id="servicios">         
             <div className="container px-4 py-5" id="icon-grid">
                     <h2><span className="bt_bb_headline_content"><span>Nuestros<br></br>
                     <em>Servicios de Automatizacion</em></span></span></h2>
@@ -173,19 +181,21 @@ function Home(){
             </div>
 
             <div>
-                <h2><span className="bt_bb_headline_content"><span>Nuestras <strong>Marcas</strong></span></span></h2>
-                <div className="certifications">
-                    <img className= "grid-element" src={ignition}  alt="" />
-                    <img className= "grid-element" src={siemens} alt="" />
-                    <img className= "grid-element" src={kepware} alt="" />
-                    <img className= "grid-element" src={rockwell} alt="" />
-                    <img className= "grid-element" src={kuka} alt="" />
-                    <img className= "grid-element" src={abb} alt="" />
-                    <img className= "grid-element" src={weintek} alt="" />
-                    <img className= "grid-element" src={keyence} alt="" />
-                    <img className= "grid-element" src={cognex} alt="" />
+              <h2><span className="bt_bb_headline_content"><span>Nuestras <strong>Marcas</strong></span></span></h2>
+              <div className="flexi">
+                  <div className="certifications">
+                      <img className= "grid-element" src={ignition}  alt="" />
+                      <img className= "grid-element" src={siemens} alt="" />
+                      <img className= "grid-element" src={kepware} alt="" />
+                      <img className= "grid-element" src={rockwell} alt="" />
+                      <img className= "grid-element" src={kuka} alt="" />
+                      <img className= "grid-element" src={abb} alt="" />
+                      <img className= "grid-element" src={weintek} alt="" />
+                      <img className= "grid-element" src={keyence} alt="" />
+                      <img className= "grid-element" src={cognex} alt="" />
 
-                </div>      
+                  </div>      
+                </div>
             </div>
         <Footer />    
         </div>
