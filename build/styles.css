@@ -1,0 +1,245 @@
+.header-dark {
+  background:url(../src/images/header.jpg) whitesmoke;
+  background-size:cover;
+  padding-top:0;
+  padding-bottom:0;
+  color:#fff;
+  border-radius:0;
+  box-shadow:none;
+  border:none;
+}
+
+
+.fixedTop {
+  background: url(../src/images/header.jpg) WHITESMOKE;
+  background-size:cover;
+  position: sticky;
+  top: 0;
+  z-index: 10000;  
+  padding-top:none;
+  padding-bottom:none;
+  color:#fff;
+  border-radius:0;
+  box-shadow:none;
+  border:none;
+  @include transition(padding-top 5s ease);
+  
+}
+
+
+
+
+
+.header-dark .navbar .navbar-brand {
+  font-weight:bold;
+  color:inherit;
+}
+
+.header-dark .navbar .navbar-brand:hover {
+  color:#f0f0f0;
+}
+
+.header-dark .navbar .navbar-collapse span {
+  margin-top:5px;
+}
+
+.header-dark .navbar .navbar-collapse span .login {
+  color:#d9d9d9;
+  margin-right:.5rem;
+  text-decoration:none;
+}
+
+.header-dark .navbar .navbar-collapse span .login:hover {
+  color:#fff;
+}
+
+.header-dark .navbar .navbar-toggler {
+  border-color:#747474;
+}
+
+.header-dark .navbar .navbar-toggler:hover, .header-dark .navbar-toggler:focus {
+  background:none;
+}
+
+.header-dark .navbar .navbar-toggler {
+  color:#eee;
+}
+
+.header-dark .navbar .navbar-collapse, .header-dark .navbar .form-inline {
+  border-color:#636363;
+}
+
+
+
+.header-dark .navbar.navbar-dark .navbar-nav .nav-link {
+  color: #05386b;
+}
+
+.header-dark .navbar.navbar-dark .navbar-nav .nav-link:focus, .header-dark .navbar.navbar-dark .navbar-nav .nav-link:hover {
+  color:#05386b !important;
+  font-weight: 150;
+  background-color:transparent;
+}
+
+.header-dark .navbar .navbar-nav > li > .dropdown-menu {
+  margin-top:-5px;
+  box-shadow:0 4px 8px rgba(0,0,0,.1);
+  background-color:#fff;
+  border-radius:2px;
+}
+
+.header-dark .navbar .dropdown-menu .dropdown-item:focus, .header-dark .navbar .dropdown-menu .dropdown-item {
+  line-height:2;
+  font-size:14px;
+  color:#37434d;
+}
+
+.header-dark .navbar .dropdown-menu .dropdown-item:focus, .header-dark .navbar .dropdown-menu .drodown-item:hover {
+  background:#ebeff1;
+}
+
+.header-dark .navbar .action-button, .header-dark .navbar .action-button:active {
+  background:#208f8f;
+  border-radius:20px;
+  font-size:inherit;
+  color:#fff;
+  box-shadow:none;
+  border:none;
+  text-shadow:none;
+  padding:.5rem .8rem;
+  transition:background-color 0.25s;
+}
+
+.header-dark .navbar .action-button:hover {
+  background:#269d9d;
+}
+
+.header-dark .navbar .form-inline label {
+  color:#ccc;
+}
+
+.header-dark .navbar .form-inline .search-field {
+  display:inline-block;
+  width:80%;
+  background:none;
+  border:none;
+  border-bottom:1px solid transparent;
+  border-radius:0;
+  color:#ccc;
+  box-shadow:none;
+  color:inherit;
+  transition:border-bottom-color 0.3s;
+}
+
+.header-dark .navbar .form-inline .search-field:focus {
+  border-bottom:1px solid #ccc;
+}
+
+.header-dark .hero {
+  margin-top:60px;
+}
+
+
+
+.header-dark .hero h1 {
+  color:#fff;
+  font-family:'Bitter', serif;
+  font-size:40px;
+  margin-top:20px;
+  margin-bottom:80px;
+}
+
+
+.header-dark .hero .embed-responsive iframe {
+  background-color:#666;
+}
+
+
+footer {
+	text-align: center;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	background-color: #1abc9c;
+}
+
+.bt_bb_headline_content {
+  display: block;
+  color: inherit;
+  letter-spacing: -.02em;
+  font-size:2.5rem;
+  text-align: center;
+}
+
+
+
+
+.certifications{
+  display: block;
+  padding:10px 10px;
+  grid-template-columns: 3fr 2fr;
+  grid-gap: 20px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: 50 px;
+  text-align: center;
+}
+.grid-element {
+  width: 150px;
+  padding: 20px;
+  
+}
+
+
+
+.servicios{
+  background: linear-gradient(to right, #d94343 0%, #eb466b 100%);
+}
+
+
+@media (min-width: 992px) {
+  .header-dark .navbar.navbar .navbar-nav .nav-link {
+    padding-left:1.2rem;
+    padding-right:1.2rem;
+  }
+
+  .grid-element {
+    width: 150px;
+    padding: 20px;
+  }
+} 
+
+@media (min-width:768px) {
+  .header-dark .hero {
+    margin-top:20px;
+  }
+  .header-dark .hero h1 {
+    margin-bottom:50px;
+    line-height:1.5;
+  }
+  .certifications{
+    display: block;
+    padding:10px 20px;
+    grid-template-columns: 3fr 2fr;
+    grid-gap: 20px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+  .grid-element {
+    width: 200px;
+    padding: 20px;
+    align-items: center;
+    
+  }  
+  .header-dark .navbar {
+    padding-top:.75rem;
+    padding-bottom:.75rem;
+  }
+
+  .fixedTop .navbar {
+    padding-top:0rem;
+    padding-bottom:0rem;
+  }
+}
