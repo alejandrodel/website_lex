@@ -49,7 +49,7 @@ function Header(){
                                     <Nav.Link href="/" smooth>INICIO</Nav.Link>
                                     <Nav.Link href="/#nosotros" smooth>NOSOTROS</Nav.Link>
                                     <Nav.Link href="/#servicios" smooth>SERVICIOS</Nav.Link>
-                                    <Nav.Link href="/Contacto" smooth>CONTACTO</Nav.Link>
+                                    <Nav.Link href="/#contacto" smooth>CONTACTO</Nav.Link>
                                     {/*<NavDropdown title="Dropdown" id="basic-nav-dropdown">
                                     <NavDropdown.Item as={Link} to={"/Alex"}>Action</NavDropdown.Item>
                                     <NavDropdown.Item as={Link} to={"/Alex"}>
